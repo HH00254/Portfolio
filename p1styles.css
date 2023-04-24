@@ -455,6 +455,7 @@ footer p:nth-last-of-type(1) a::before{
 	#webpage-window-container{
 		display: flex;
 		flex-wrap: wrap;
+		font-size:x-small;
 	}
 
 	#skillsServices{
@@ -489,14 +490,18 @@ footer p:nth-last-of-type(1) a::before{
 		flex-direction: column;
 	}
 
-	#content-area-two > article div img{
+	#content-area-two > div img{
 		border-radius: 45px;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		width: 50%;
+		width: 25%;
 		max-width: 100%;
 		min-width: 250px;
 		height: auto;
+	}
+
+	#content-area-two > article div img{
+		width: 50%;
 	}
 
 	#fieldsetContainerOne{
