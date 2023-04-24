@@ -1,0 +1,508 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Al Hochbaum
+    Date:
+    Description: CSS for the webpage 
+
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#webpage-window-container {
+	display: flex;
+	max-width: 140em;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+		
+}
+
+.background-container{
+	background-image: url("images/background3.jpeg");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	text-shadow: 2px 2px #221596;
+}
+
+.background-container #background-title{
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	align-items: flex-start;
+}
+
+#background-title h1{
+	flex-basis: 100%;
+	font-size: 2.80em;
+	font: bold;
+	letter-spacing: 5px;
+	margin-top: 26px;
+	margin-left: 40px;
+}
+
+#background-subtitle{
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#background-subtitle h3, h4{
+	font-size: .80em;
+	margin-top: 0px;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	margin-right: 10px;
+}
+
+#sub-navigation{
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 1px 1px #221596;
+	background-color: #236d93;
+	box-shadow: 0px 0.5px 0px #706f6f;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#mainLinks, #personalInfo{
+	display: flex;
+}
+
+#sub-navigation ul li a:focus{
+	color:#ba210a;
+}
+
+#sub-navigation ul li a:hover{
+	color: darkkhaki;
+}
+
+#sub-navigation ul li{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+#sub-navigation ul li:not(:last-child)::after{
+	margin-left: 7px;
+	margin-bottom: 2.5px;
+	content: '|';	
+	text-shadow:  -1px 0px #30759b;
+	color: #8dbade;
+} 
+
+#sub-navigation ul li:not(:nth-of-type(1))::before{
+	margin-right: 7px;
+	content: '';
+} 
+
+#sub-navigation ul li a{
+	flex: 1;
+	font-size: 1.10em;
+	color: #fff;
+	text-decoration: none;
+}
+
+#main-content-container{
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+aside #sub-aside p img{
+	float: right;
+}
+
+#side-navigation ul a:focus{
+	color:#ba210a;
+}
+
+#side-navigation ul li a:hover{
+	color: darkkhaki;
+}
+
+#content-area-one{
+	display: flex;
+	flex-direction: column;
+}
+
+#content-area-one > *{
+	padding-left: 20px;
+}
+
+#sectionHeaderOne h2{
+	padding-top: 10px;
+	margin: 0px;
+}
+
+#sectionHeaderOne, #sectionHeaderTwo{
+	text-shadow: 2px 2px #c9c5ec;
+	border-bottom: 1px solid  #858181;
+} 
+
+#main-text-body, #secondary-text-body{
+	max-width: 1390px;
+	line-height: 25px;
+}
+
+#main-text-body p{
+	padding-bottom: 10px;
+}
+
+#firstBullet, #secondBullet, #thirdBullet > *{
+	padding-bottom: 5px;
+}
+
+#main-text-body{
+	margin-right: 20px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+#skillsServices{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+#skillsServices > div h4{
+	text-shadow: 2px 2px #9fade9;
+ 	padding-top: 10px;
+}
+
+#skillsServices :nth-child(1) ul li{
+	padding-left: 10px;
+	list-style-position: inside;
+}
+
+#skillsServices :nth-child(2) ul li{
+	padding-left: 10px;
+	list-style-position: inside;
+}
+
+#secondary-text-body{
+	margin-bottom: 20px;
+}
+
+#firstBullet, #secondBullet{
+	padding-left: 30px;
+	list-style-position: inside;
+}
+
+#thirdBullet{
+	padding-left: 60px;
+	list-style-position: inside;
+}
+
+#content-area-two{
+	display: flex;
+	min-height:auto;
+	flex-direction: column;
+}
+
+#content-area-two > *{
+	padding-left: 20px;
+}
+
+#content-area-two > article div h4{
+	text-shadow: 2px 2px #9fade9;
+	border-bottom: 1px solid  #d0d0d0;
+}
+
+#content-area-two :nth-child(2) > li{
+	list-style-position: inside;
+}
+
+#areaTwoArticleOne, #areaTwoArticleTwo, #areaTwoArticleThree{
+	display: flex;
+	padding-bottom: 100px;
+}
+
+#areaTwoArticleOne :nth-child(1){
+	flex-basis: 33.33%;
+}
+
+#areaTwoArticleOne :nth-child(2){
+	flex-basis: 33.33%;
+	display: flex;
+	justify-content: center;
+}
+
+#areaTwoArticleTwo :nth-child(1){
+	flex-basis: 33.33%;
+}
+
+#areaTwoArticleTwo :nth-child(2){
+	flex-basis: 33.33%;
+	display: flex;
+	justify-content: center;
+}
+
+#areaTwoArticleThree :nth-child(1){
+	flex-basis: 33.33%;
+}
+
+#areaTwoArticleThree :nth-child(2){
+	flex-basis: 33.33%;
+	display: flex;
+	justify-content: center;
+}
+
+#CarWashForm, #salesQuote, #vehicleData{
+	border: black solid 1px;
+	margin-top: 15px;
+	max-width: 600px;;
+}
+
+#images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#content-area-two > div img{
+	border-radius: 45px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 40%;
+	max-width: 100%;
+	min-width: 500px;
+	height: auto;
+}
+
+#formContainer{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#contactForm{
+	flex-basis: 33.33%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px #413f3f, -2px -2px 4px #5c5a5a;
+}
+
+#contactForm :nth-child(1){
+	list-style: none;
+}
+
+#contactForm :nth-child(3) [type='submit'], [type='reset']{
+	float: right;
+	margin-left: 10px;
+}
+
+#fieldsetContainerOne, #fieldsetContainerTwo{
+	display: flex;
+	margin: 10px 10px 0px 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px #838181, -2px -2px 4px #969494;
+} 
+
+ legend{
+	text-shadow: 2px 2px #c9c5ec;
+	border-bottom: 1px solid  #858181;
+}
+
+#fieldsetContainerTwo legend{
+	padding-top: 20px;
+}
+
+#fieldsetContainerOne, #subFieldsetOne, #subFieldsetTwo,  #fieldsetContainerTwo, #formButtons{
+	border: none;
+ }
+
+#fieldsetContainerTwo{
+	margin: 5px 15px 5px 15px;
+ }
+
+ #subFieldsetOne{
+	flex-basis: 50%;
+	list-style: none;
+}
+
+#subFieldsetOne ol{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#subFieldsetOne ol li{
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+#subFieldsetOne ol li select{
+	width: 206px;
+}
+
+#subFieldsetTwo{
+	flex-basis: 50%;
+	list-style: none;
+	
+}
+
+#subFieldsetTwo ol{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#subFieldsetTwo ol li{
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+#fieldsetContainerOne fieldset ol li input{
+	width: 200px;
+}
+
+.error {
+	color: red;
+	font-size: small;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer nav ul{
+	display: flex;
+	justify-content: center;
+}
+
+footer nav ul li{
+	list-style: none;
+}
+
+footer nav ul li:not(:last-child)::after{
+	margin-left: 5.50px ;
+	content: '|';	
+	color: #757575;
+} 
+
+footer nav ul li:not(:nth-of-type(1))::before{
+	margin-right: 5.50px ;
+	content: '';	
+} 
+
+footer nav ul li a{
+	color: #29769d;
+	text-decoration: none;
+}
+
+footer a:focus{
+	color:#ba210a;
+}
+
+footer a:hover{
+	color: darkkhaki;
+}
+
+footer p > a{
+	text-decoration: none;
+	color: #236d93;
+}
+
+footer p:nth-last-of-type(1){
+	color: #6c6565;
+
+}
+
+footer p:nth-last-of-type(1) a::before{
+	content: '| ';	
+	color:  #979797;
+}
+
+@media (max-width: 1000px) {
+
+	#webpage-window-container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#skillsServices{
+		flex-direction: column;
+	}
+
+	#sub-navigation{
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#mainLinks{
+		flex-wrap: wrap;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#personalInfo{
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#content-area-two{
+		flex-wrap: wrap;
+	}
+
+	#areaTwoArticleOne, #areaTwoArticleTwo, #areaTwoArticleThree {
+		flex-direction: column;
+	}
+
+	#content-area-two > article div img{
+		border-radius: 45px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 50%;
+		max-width: 100%;
+		min-width: 250px;
+		height: auto;
+	}
+
+	#fieldsetContainerOne{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+}
+
