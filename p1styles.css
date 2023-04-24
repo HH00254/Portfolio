@@ -501,7 +501,8 @@ footer p:nth-last-of-type(1) a::before{
 	}
 
 	#content-area-two > article div img{
-		width: 25%;
+		width: 50%;
+		min-width: 300px;
 	}
 
 	#fieldsetContainerOne{
