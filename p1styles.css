@@ -93,11 +93,15 @@ h6 {
 }
 
 #background-subtitle h2, h2{
-	font-size: large;
+	font-size: 0.80em;
 	margin-top: 0px;
 	font-weight: bold;
 	letter-spacing: 2.5px;
 	margin-right: 10px;
+}
+
+#sectionHeaderOne h2{
+	font-size: large;
 }
 
 #sub-navigation{
