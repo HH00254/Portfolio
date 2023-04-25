@@ -50,7 +50,7 @@ h6 {
 	color: rgb(86, 79, 128);
 	background-color: #8ab2d1;
 	border-radius: 5px;
-	border: #37353d solid .5px;
+	border: #37353d solid 2px;
   }
   
   /* mouse over link */
@@ -58,7 +58,7 @@ h6 {
 	color: darkkhaki;
   }
 
-.background-container{
+#background-container{
 	background-image: url("images/background3.jpeg");
 	background-repeat: no-repeat;
 	background-size:100% auto;
@@ -68,7 +68,7 @@ h6 {
 	text-shadow: 2px 2px #221596;
 }
 
-.background-container #background-title{
+#background-container #background-title{
 	display: flex;
 	flex: 1;
 	flex-basis: 100%;
@@ -92,7 +92,7 @@ h6 {
 	align-items: flex-end;
 }
 
-#background-subtitle h3, h4{
+#background-subtitle h2, h2{
 	font-size: .80em;
 	margin-top: 0px;
 	font-weight: bold;
@@ -195,7 +195,7 @@ aside #sub-aside p img{
 	flex-wrap: wrap;
 }
 
-#skillsServices > div h4{
+#skillsServices > div h3{
 	text-shadow: 2px 2px #9fade9;
  	padding-top: 10px;
 }
@@ -428,14 +428,6 @@ footer nav ul li a{
 	text-decoration: none;
 }
 
-/* footer a:focus{
-	color:#ba210a;
-}
-
-footer a:hover{
-	color: darkkhaki;
-} */
-
 footer p > a{
 	text-decoration: none;
 	color: #236d93;
@@ -499,7 +491,7 @@ footer p:nth-last-of-type(1) a::before{
 		padding-bottom: 20px;
 		width: 25%;
 		max-width: 100%;
-		min-width: 250px;
+		min-width: 300px;
 		height: auto;
 	}
 
