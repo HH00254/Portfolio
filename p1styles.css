@@ -50,7 +50,7 @@ h6 {
 	color: rgb(86, 79, 128);
 	background-color: #8ab2d1;
 	border-radius: 5px;
-	border: #37353d solid 1px;
+	border: #37353d solid .5px;
   }
   
   /* mouse over link */
