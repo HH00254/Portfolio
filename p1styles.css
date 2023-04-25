@@ -2,7 +2,7 @@
     
     Project 1 Stylesheet
     Name: Al Hochbaum
-    Date:
+    Date: 2023-04-24
     Description: CSS for the webpage 
 
 
@@ -28,7 +28,7 @@ h6 {
 	box-sizing: border-box;
 }
 
-#webpage-window-container {
+#webpage-window-container {			
 	display: flex;
 	max-width: 140em;
 	flex-direction: column;
@@ -37,9 +37,26 @@ h6 {
 	border-radius: 8px;
 	margin: 10px auto;
 	padding: 10px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-		
+	font-family: Verdana, Geneva, Tahoma, sans-serif;	
 }
+  
+  /*Footer shit*/
+  footer a:active, #webpage-window-container > nav ul li a:active{
+	color: rgb(197, 158, 223);
+  } 
+  
+  /* visited link */
+  footer a:focus, #webpage-window-container > nav ul li a:focus{
+	color: rgb(86, 79, 128);
+	background-color: #8ab2d1;
+	border-radius: 5px;
+	border: #37353d solid 2px;
+  }
+  
+  /* mouse over link */
+  footer a:hover, #webpage-window-container > nav ul li a:hover{
+	color: darkkhaki;
+  }
 
 .background-container{
 	background-image: url("images/background3.jpeg");
@@ -97,14 +114,6 @@ h6 {
 	display: flex;
 }
 
-#sub-navigation ul li a:focus{
-	color:#ba210a;
-}
-
-#sub-navigation ul li a:hover{
-	color: darkkhaki;
-}
-
 #sub-navigation ul li{
 	display: flex;
 	align-items: center;
@@ -140,14 +149,6 @@ h6 {
 
 aside #sub-aside p img{
 	float: right;
-}
-
-#side-navigation ul a:focus{
-	color:#ba210a;
-}
-
-#side-navigation ul li a:hover{
-	color: darkkhaki;
 }
 
 #content-area-one{
@@ -427,13 +428,13 @@ footer nav ul li a{
 	text-decoration: none;
 }
 
-footer a:focus{
+/* footer a:focus{
 	color:#ba210a;
 }
 
 footer a:hover{
 	color: darkkhaki;
-}
+} */
 
 footer p > a{
 	text-decoration: none;
@@ -449,6 +450,8 @@ footer p:nth-last-of-type(1) a::before{
 	content: '| ';	
 	color:  #979797;
 }
+
+
 
 @media (max-width: 1000px) {
 
@@ -509,5 +512,5 @@ footer p:nth-last-of-type(1) a::before{
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-}
 
+}
