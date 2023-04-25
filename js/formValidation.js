@@ -1,3 +1,12 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Al Hochbaum
+    Date: 2023-04-24
+    Description: Javascript for form validation within the webpage
+
+*********************/
+
 /*
  * Handles the submit event of the survey form
  *
@@ -97,7 +106,7 @@ function formHasErrors() {
 		}
 
 		// Postal code validation 
-		if (textField.getAttribute("name") == "postal" && resultFromHasInput){
+		if (textField.getAttribute("name") === "postal" && resultFromHasInput){
 			let regexPostalCode = new RegExp(/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/);
 
 			let postalCodeValue = document.getElementById("postal").value;
@@ -116,7 +125,7 @@ function formHasErrors() {
 		}
 
 		// Email addres code validation 
-		if (textField.getAttribute("name") == "email" && resultFromHasInput){
+		if (textField.getAttribute("name") === "email" && resultFromHasInput){
 			let regexEmail = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/);
 
 			let emailAddress = document.getElementById("email").value;
@@ -135,7 +144,7 @@ function formHasErrors() {
 		}
 
 		// Validation for phone number continued
-		if (textField.getAttribute("name") == "phone" && resultFromHasInput){
+		if (textField.getAttribute("name") === "phone" && resultFromHasInput){
 
 			let phoneNumber = document.getElementById("phone").value;
 
@@ -156,7 +165,7 @@ function formHasErrors() {
 	// Checking that a province has been selected
 	let provinceSelected = document.getElementById("province").value;
 
-	if ((provinceSelected == "- Select -")){
+	if ((provinceSelected === "- Select -")){
 		document.getElementById("province_error").style.display = "block";
 
 		if (!errorFlag){
@@ -189,7 +198,8 @@ function formHasErrors() {
  */
  function elementLostFocus(inputElement){
 
-	inputElement.style = "background-color: #FFF;";
+	inputElement.style = "background-color: #FFF; ";
+	inputElement.getAttribute("style", "outline: none;");
  }
 
 /*
@@ -200,7 +210,7 @@ function formHasErrors() {
  */
 function formFieldHasInput(fieldElement) {
 	// Check if the text field has a value
-	if (fieldElement.value == null || trim(fieldElement.value) == "") {
+	if (fieldElement.value === null || trim(fieldElement.value) === "") {
 		// Invalid entry
 		return false;
 	}
@@ -210,12 +220,16 @@ function formFieldHasInput(fieldElement) {
 }
 
 /*
+ * When invoked, this method checks that the value
+ * entered was a proper phone number
  *
+ * param A string that has numbers
+ * return Returns a bool value of true if the parameter passed the check.
  */
 function phoneNumberCheck(number){
 	let isANumber = false;
 
-	if (!isNaN(number) && (number.length == 10 || number.length == 11 && number[0] == "1")) {
+	if (!isNaN(number) && (number.length === 10)) {
 		isANumber = true;
 	}
 
@@ -273,7 +287,8 @@ function load() {
 
 		elementLostFocus(province);
 	});
-	
+
+	// Hide all errors in the html5 markup
     hideErrors();
 }
 
