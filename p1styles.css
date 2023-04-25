@@ -49,8 +49,8 @@ h6 {
   footer a:focus, #webpage-window-container > nav ul li a:focus{
 	color: rgb(86, 79, 128);
 	background-color: #8ab2d1;
-	border-radius: 2.5px;
-	border: #37353d solid 2px;
+	border-radius: 5px;
+	border: #37353d solid 1px;
   }
   
   /* mouse over link */
