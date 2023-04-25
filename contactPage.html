@@ -1,28 +1,36 @@
+<!--------w-----------
+    
+    Project 1 Stylesheet
+    Name: Al Hochbaum
+    Date: 2023-04-24
+    Description: Html markup for contact form page for the webpage 
+
+    --------------------->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-      
 		<title>HHM Portal</title>
 		<link rel="stylesheet" href="p1styles.css"  type="text/css">
         <script src="js/formValidation.js"></script>
 	</head>
 	<body id="webpage-window-container">
 
-			<div class="background-container">
+        <section id="background-container" role="banner">
 				<div id="background-title">
 					<h1>Contact</h1>
 				</div>
 				<div id="background-subtitle">
-					<h3>Innovations in Computer Science</h3>
-					<h4>By Al Hochbaum</h4>
+					<h2>Innovations in Computer Science</h2>
+					<h2>By Al Hochbaum</h2>
 				</div>
-			</div>
+			</section>
 
-			<nav id="sub-navigation">
+			<nav id="sub-navigation" aria-label="page-nav-one">
 				<ul id="mainLinks">
-					<li><a href="https://hh00254.github.io/Portfolio/index.html">Home</a></li>
-					<li><a href="https://hh00254.github.io/Portfolio/Services.html">Products/Services</a></li>
-					<li><a href="https://hh00254.github.io/Portfolio/contactPage.html">Contact Page</a></li>
+					<li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+					<li><a href="http://127.0.0.1:5501/Services.html">Products/Services</a></li>
+					<li><a href="#">Contact Page</a></li>
 				</ul>
 			</nav>
 
@@ -31,97 +39,98 @@
 				<section id="content-area-one">
 					<header id="sectionHeaderOne"><h2>Contact Form</h2></header>
 
-					    <div id="formContainer">
-						<form id="contactForm" action="https://hh00254.github.io/Portfolio">
-						    <fieldset id="fieldsetContainerOne">
-							<fieldset id="subFieldsetOne">
-							    <legend>Your Details</legend>
-							    <ol>
-								<li>
-								    <label for="name">Full Name</label>
-								    <input id="name" name="name" type="text">
-								    <p class="contactError error" id="name_error">* Required field</p>
-								</li>
-								<li>
-								    <label for="address">Address</label>
-								    <input id="address" name="address" type="text">
-								    <p class="contactError error" id="address_error">* Required field</p>
-								</li>
-								<li>
-								    <label for="city">City</label>
-								    <input id="city" name="city" type="text">
-								    <p class="contactError error" id="city_error">* Required field</p>
-								</li>
-								<li>
-								    <label for="province">Province</label>
-								    <select id="province" name="province">
-									<option>- Select -</option>
-									<option value="AB">Alberta</option>
-									<option value="BC">British Columbia</option>
-									<option value="MB">Manitoba</option>
-									<option value="NB">New Brunswick</option>
-									<option value="NL">Newfoundland and Labrador</option>
-									<option value="NS">Nova Scotia</option>
-									<option value="ON">Ontario</option>
-									<option value="PE">Prince Edward Island</option>
-									<option value="QC">Quebec</option>
-									<option value="SK">Saskatchewan</option>
-									<option value="NT">Northwest Territories</option>
-									<option value="NU">Nunavut</option>
-									<option value="YT">Yukon</option>
-								    </select> 
-								    <p class="contactError error" id="province_error">* Required field</p>
-								</li>
-								<li>
-								    <label for="postal">Postal Code</label>
-								    <input id="postal" name="postal" type="text">
-								    <p class="contactError error" id="postal_error">* Required field</p>
-								    <p class="contactError error" id="postalformat_error">* Invalid postal code</p>
-								</li>
-							    </ol>
-						    </fieldset>
+                    <div id="formContainer">
+                        <form id="contactForm"  action="https://hh00254.github.io/Portfolio">
+                            <fieldset id="fieldsetContainerOne">
+                                <fieldset id="subFieldsetOne">
+                                    <legend>Your Details</legend>
+                                    <ol>
+                                        <li>
+                                            <label for="name">Full Name</label>
+                                            <input id="name" name="name" type="text">
+                                            <p class="contactError error" id="name_error">* Required field</p>
+                                        </li>
+                                        <li>
+                                            <label for="address">Address</label>
+                                            <input id="address" name="address" type="text">
+                                            <p class="contactError error" id="address_error">* Required field</p>
+                                        </li>
+                                        <li>
+                                            <label for="city">City</label>
+                                            <input id="city" name="city" type="text">
+                                            <p class="contactError error" id="city_error">* Required field</p>
+                                        </li>
+                                        <li>
+                                            <label for="province">Province</label>
+                                            <select id="province" name="province">
+                                                <option>- Select -</option>
+                                                <option value="AB">Alberta</option>
+                                                <option value="BC">British Columbia</option>
+                                                <option value="MB">Manitoba</option>
+                                                <option value="NB">New Brunswick</option>
+                                                <option value="NL">Newfoundland and Labrador</option>
+                                                <option value="NS">Nova Scotia</option>
+                                                <option value="ON">Ontario</option>
+                                                <option value="PE">Prince Edward Island</option>
+                                                <option value="QC">Quebec</option>
+                                                <option value="SK">Saskatchewan</option>
+                                                <option value="NT">Northwest Territories</option>
+                                                <option value="NU">Nunavut</option>
+                                                <option value="YT">Yukon</option>
+                                            </select> 
+                                            <p class="contactError error" id="province_error">* Required field</p>
+                                        </li>
+                                        <li>
+                                            <label for="postal">Postal Code</label>
+                                            <input id="postal" name="postal" type="text">
+                                            <p class="contactError error" id="postal_error">* Required field</p>
+                                            <p class="contactError error" id="postalformat_error">* Invalid postal code</p>
+                                        </li>
+                                    </ol>
+                            </fieldset>
+                                
+                            <fieldset id="subFieldsetTwo">
+                                <legend>Contact Information</legend>
+                                <ol>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input id="email" name="email" type="email"/>
+                                        <p class="contactError error" id="email_error">* Required field</p>
+                                        <p class="contactError error" id="emailformat_error">* Invalid email address</p>
+                                    </li>
+                                    <li>
+                                        <label for="phone">Phone</label>
+                                        <input id="phone" name="phone" type="tel">
+                                        <p class="contactError error" id="phone_error">* Required field</p>
+                                        <p class="contactError error" id="phoneformat_error">* Invalid phone number</p>
+                                    </li>
+                                </ol>
+                            </fieldset>
+                        </fieldset>
 
-						    <fieldset id="subFieldsetTwo">
-							<legend>Contact Information</legend>
-							<ol>
-							    <li>
-								<label for="email">Email</label>
-								<input id="email" name="email" type="email"/>
-								<p class="contactError error" id="email_error">* Required field</p>
-								<p class="contactError error" id="emailformat_error">* Invalid email address</p>
-							    </li>
-							    <li>
-								<label for="phone">Phone</label>
-								<input id="phone" name="phone" type="tel">
-								<p class="contactError error" id="phone_error">* Required field</p>
-								<p class="contactError error" id="phoneformat_error">* Invalid phone number</p>
-							    </li>
-							</ol>
-						    </fieldset>
-						</fieldset>
+                        <fieldset id="fieldsetContainerTwo">
+                            <legend>Comments</legend>
+                                <ul>
+                                    <li>
+                                        <label for="questions">.</label>
+                                        <textarea name="questions" id="questions" cols="30" rows="15"></textarea>
+                                    </li>
+                                </ul>
+                        </fieldset>
 
-						<fieldset id="fieldsetContainerTwo">
-						    <legend>Comments</legend>
-							<ul>
-							    <li>
-								<label for="questions"></label>
-								<textarea name="questions" id="questions" cols="30" rows="15"></textarea>
-							</ul>
-						</fieldset>
-
-						<fieldset id="formButtons">
-						    <button type="reset" id="clear">Clear Form</button>
-						    <button type="submit" id="submit">Submit Form</button>
-						</fieldset>
-					     </form>
-					</div>
-				    </section>
+                        <fieldset id="formButtons">
+                            <button type="reset" id="clear">Clear Form</button>
+                            <button type="submit" id="submit">Submit Form</button>
+                        </fieldset>
+                     </form>
+                </div>
+            </section>
 				<footer>
 					<nav>
 						<ul>
-							<li><a href="https://hh00254.github.io/Portfolio/index.html">Home</a></li>
-							<li><a href="https://hh00254.github.io/Portfolio/Services.html">Products/Services</a></li>
-							<li><a href="https://hh00254.github.io/Portfolio/contactPage.html">Contact Page</a></li>
+							<li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+							<li><a href="http://127.0.0.1:5501/Services.html">Products/Services</a></li>
+							<li><a href="#">Contact page</a></li>
 						</ul>
 					</nav>
 					<p>
